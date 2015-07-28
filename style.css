@@ -83,17 +83,25 @@ h1 {
 
 h2 {
   font-size: 50px;
+  text-align: center;
+  padding-top: 1em;
+}
+
+h3 {
+  font-size: 30px;
+  padding-top: 1em;
+}
+
+h4 {
+  text-align: center;
 }
 
 img {
-  margin: 40px 0px 0px 0px;
-  border: 7px solid white;
-  border-radius: 20px;
+
 }
 
 ul {
-  padding: 10px;
-  background: rgba(0,0,0,0.5);
+
 }
 
 li {
@@ -102,21 +110,56 @@ li {
 }
 
 div {
-  text-align: center;
+
 }
 
 p {
-
+  margin: 0.5em 0;
+  padding: 0 1em;
 }
 
 /*____CLASS & ID STYLES________________________________________________*/
 
-.main {
-  padding: 0 15%;
+nav>ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+  list-style: none;
 }
 
-.main div {
-  margin-top: 2em;
+#main {
+  margin-top: 1em;
+  padding: 0 7.5%;
+/*  text-align: center;*/
+}
+
+#main>div {
+/*  margin-top: 2em;*/
+  /*text-align: left;*/
+  min-height: 15em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#main ul {
+
+}
+
+#main li {
+  display: block;
+}
+
+div.skill-list {
+  display: inline-block;
+  width: 20%;
+}
+
+.skill-list ul {
+  /*list-style: disc;*/
+}
+
+.clear {
+  clear: both;
 }
 
 

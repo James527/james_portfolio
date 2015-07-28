@@ -1,8 +1,135 @@
+/*____MEYER RESET________________________________________________
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*____ADDED FONTS________________________________________________*/
+
+
+
+/*____MAIN STYLES________________________________________________*/
+
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  background: #232323;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  background: url('http://i.imgur.com/Hv8TPLF.jpg');
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 4em;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  font-size: 70px;
+  height: 164px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+img {
+  margin: 40px 0px 0px 0px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+div {
+  text-align: center;
+}
+
+p {
 
 }
 
-head {
+/*____CLASS & ID STYLES________________________________________________*/
 
+.main {
+  padding: 0 15%;
 }
 
+.main div {
+  margin-top: 2em;
+}
+
+
+/*____MEDIA QUERY________________________________________________*/
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 36px;
+    padding: 5px;
+  }
+
+  li {
+    padding: 5px;
+    display: block;
+  }
+}

@@ -55,11 +55,12 @@ table {
 
 /*____MAIN STYLES________________________________________________*/
 
-body {
+/*body {
   font-family: helvetica, sans-serif;
   margin: 0 auto;
   background: #232323;
   color: #fff;
+  
 }
 
 header {
@@ -116,11 +117,11 @@ div {
 p {
   margin: 0.5em 0;
   padding: 0 1em;
-}
+}*/
 
 /*____CLASS & ID STYLES________________________________________________*/
 
-nav>ul {
+/*nav>ul {
   padding: 10px;
   background: rgba(0,0,0,0.5);
   list-style: none;
@@ -160,12 +161,12 @@ div.skill-list {
 
 .clear {
   clear: both;
-}
+}*/
 
 
 /*____MEDIA QUERY________________________________________________*/
 
-@media (max-width: 750px) {
+/*@media (max-width: 750px) {
   h1 {
     font-size: 36px;
     padding: 5px;
@@ -175,4 +176,4 @@ div.skill-list {
     padding: 5px;
     display: block;
   }
-}
+}*/

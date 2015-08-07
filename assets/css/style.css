@@ -17,17 +17,18 @@ header {
   color: #fff;
   width: 100%;
   min-height: 12.5em;
-  padding-top: 1em;
+  padding-top: 0em;
 }
 
 a {
   color: #000;
 }
 
-/*h1 {
-  font-size: 70px;
-  height: 164px;
-}*/
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
 h2 {
   font-size: 50px;

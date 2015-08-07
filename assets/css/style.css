@@ -16,18 +16,18 @@ header {
   background-size: cover;
   color: #fff;
   width: 100%;
-  min-height: 150px;
-  padding-top: 4em;
+  min-height: 12.5em;
+  padding-top: 1em;
 }
 
 a {
   color: #000;
 }
 
-h1 {
+/*h1 {
   font-size: 70px;
   height: 164px;
-}
+}*/
 
 h2 {
   font-size: 50px;
@@ -48,6 +48,13 @@ p {
   margin: 0.5em 0;
   padding: 0 1em;
 }
+
+/*____BOOTSTRAP HACKS________________________________________________*/
+
+.navbar {
+  background: rgba(0,0,0,0.5);
+}
+
 
 /*____CLASS & ID STYLES________________________________________________*/
 
@@ -93,14 +100,14 @@ div.skill-list {
 
 /*____MEDIA QUERY________________________________________________*/
 
-/*@media (max-width: 750px) {
+@media (max-width: 750px) {
   h1 {
     font-size: 36px;
     padding: 5px;
   }
 
-  li {
+/*  li {
     padding: 5px;
     display: block;
-  }
-}*/
+  }*/
+}

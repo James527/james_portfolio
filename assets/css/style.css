@@ -5,6 +5,8 @@
 /*____MAIN STYLES________________________________________________*/
 
 body {
+  background: url(../images/texturetastic_gray.png);
+  background-repeat: repeat;
   font-family: helvetica, sans-serif;
   margin: 0 auto;
   color: #000;
@@ -12,8 +14,10 @@ body {
 
 header {
   text-align: center;
-  background: url('http://i.imgur.com/Hv8TPLF.jpg');
-  background-size: cover;
+  background-color: #ccc;
+  /*background: url('http://i.imgur.com/Hv8TPLF.jpg');*/
+  /*background-size: cover;*/
+  /*background: url('../images/xv.png');*/
   color: #fff;
   width: 100%;
   min-height: 12.5em;
@@ -56,6 +60,16 @@ p {
   background: rgba(0,0,0,0.5);
   margin-bottom: 0;
   min-height: 30px;
+}
+
+.navbar-nav {
+  float: none;
+  text-align: center;
+}
+
+.navbar-nav>li {
+  float: inherit;
+  display: inline-block;
 }
 
 .navbar-nav>li>a {

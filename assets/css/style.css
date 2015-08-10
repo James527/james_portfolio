@@ -218,7 +218,7 @@ ul.thumbnails {
 
 
 /* Bubble Float Left */
-.hvr-bubble-float-left {
+.hvr-bubble-float {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -233,7 +233,7 @@ ul.thumbnails {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-bubble-float-left:before {
+.hvr-bubble-float:before {
   position: absolute;
   z-index: -1;
   content: '';
@@ -247,53 +247,13 @@ ul.thumbnails {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-bubble-float-left:hover, .hvr-bubble-float-left:focus, .hvr-bubble-float-left:active {
+.hvr-bubble-float:hover, .hvr-bubble-float:focus, .hvr-bubble-float:active {
   -webkit-transform: translateX(10px);
   transform: translateX(10px);
 }
-.hvr-bubble-float-left:hover:before, .hvr-bubble-float-left:focus:before, .hvr-bubble-float-left:active:before {
+.hvr-bubble-float:hover:before, .hvr-bubble-float:focus:before, .hvr-bubble-float:active:before {
   -webkit-transform: translateX(-10px);
   transform: translateX(-10px);
-}
-
-
-/* Bubble Float Top */
-.hvr-bubble-float-top {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-bubble-float-top:before {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  left: calc(50% - 10px);
-  top: 0;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent #fff transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-bubble-float-top:hover, .hvr-bubble-float-top:focus, .hvr-bubble-float-top:active {
-  -webkit-transform: translateY(10px);
-  transform: translateY(10px);
-}
-.hvr-bubble-float-top:hover:before, .hvr-bubble-float-top:focus:before, .hvr-bubble-float-top:active:before {
-  -webkit-transform: translateY(-10px);
-  transform: translateY(-10px);
 }
 
 
@@ -321,6 +281,50 @@ ul.thumbnails {
 
 
 /*____MEDIA QUERY________________________________________________*/
+
+@media (max-width: 991px) {
+
+  /* Bubble Float Top */
+  .hvr-bubble-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-bubble-float:before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    left: calc(50% - 10px);
+    top: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #fff transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-bubble-float:hover, .hvr-bubble-float:focus, .hvr-bubble-float:active {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  .hvr-bubble-float:hover:before, .hvr-bubble-float:focus:before, .hvr-bubble-float:active:before {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+}
+
 
 @media (max-width: 768px) {
 

@@ -2,14 +2,6 @@
 
 
 
-/*____MEDIA QUERY________________________________________________*/
-
-/*@media (min-width: 768px) {
-
-}
-*/
-
-
 /*____MAIN STYLES________________________________________________*/
 
 a {
@@ -27,7 +19,7 @@ h1 {
 
 h2 {
   font-family: 'Josefin Slab', serif;
-  font-size: 3.5em;
+  font-size: 6em;
 }
 
 h3 {
@@ -60,12 +52,12 @@ body {
 
 header {
 /*  background-color: #CDF;*/
-  background: url('http://i.imgur.com/Hv8TPLF.jpg');
+  background: url('../images/headbg.png');
   background-size: cover;
   color: #fff;
   text-align: center;
-  min-height: 12.5em;
-  padding-top: 2.5em;
+  min-height: 18em;
+  padding-top: 4.5em;
   width: 100%;
 }
 
@@ -73,6 +65,7 @@ main {
   background: url(../images/texturetastic_gray.png);
   background-repeat: repeat;
   width: 100%;
+  padding: 5em 0;
 }
 
 footer {

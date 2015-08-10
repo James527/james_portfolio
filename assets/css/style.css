@@ -2,7 +2,53 @@
 
 
 
+/*____MEDIA QUERY________________________________________________*/
+
+/*@media (min-width: 768px) {
+
+}
+*/
+
+
 /*____MAIN STYLES________________________________________________*/
+
+a {
+  color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+p {
+  margin: 0.5em 0;
+  padding: 0 1em;
+}
+
+section {
+  padding: 3em 0;
+  width: 100%;
+}
 
 body {
   font-family: helvetica, sans-serif;
@@ -11,54 +57,62 @@ body {
 }
 
 header {
-  text-align: center;
+/*  background-color: #CDF;*/
   background: url('http://i.imgur.com/Hv8TPLF.jpg');
   background-size: cover;
   color: #fff;
-  width: 100%;
+  text-align: center;
   min-height: 12.5em;
-  padding-top: 0em;
+  padding-top: 2.5em;
+  width: 100%;
 }
 
-a {
-  color: #000;
+main {
+  background: url(../images/texturetastic_gray.png);
+  background-repeat: repeat;
+  width: 100%;
 }
 
-h1 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+footer {
+  background: url('../images/xv.png');
+  min-height: 12.5em;
+  padding-top: 2.5em;
+  width: 100%;
 }
 
-h2 {
-  font-size: 50px;
-  text-align: center;
-  padding-top: 1em;
-}
-
-h3 {
-  font-size: 30px;
-  padding-top: 1em;
-}
-
-h4 {
-  text-align: center;
-}
-
-p {
-  margin: 0.5em 0;
-  padding: 0 1em;
-}
 
 /*____BOOTSTRAP HACKS________________________________________________*/
 
+.affix-top, .affix {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.affix-top {
+  margin-top: 76px;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+}
+
 .navbar {
-  background: rgba(0,0,0,0.5);
   margin-bottom: 0;
   min-height: 30px;
 }
 
+.navbar-nav {
+  float: none;
+  text-align: center;
+}
+
+.navbar-nav>li {
+  float: inherit;
+  display: inline-block;
+}
+
 .navbar-nav>li>a {
+  color: #fff;
   padding: 5px 15px;
 }
 
@@ -67,59 +121,73 @@ p {
   margin: 4px 15px 4px 0;
 }
 
+.lead {
+
+}
+
+.row {
+  padding-top: 1em;
+}
+
 
 /*____CLASS & ID STYLES________________________________________________*/
 
-/*nav>ul {
-  padding: 10px;
-  background: rgba(0,0,0,0.5);
-  list-style: none;
-}
-
-#main {
-  margin-top: 1em;
-  padding: 0 7.5%;
-}
-
-#main>div {
-  min-height: 15em;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#main ul {
-
-}
-
-#main li {
-  display: block;
-}
-
-div.skill-list {
-  display: inline-block;
-  width: 20%;
-}
-
-.skill-list ul {
-}
-
-.clear {
+.clearfix {
   clear: both;
 }
-*/
+
+h1 a:hover {
+  text-decoration: none;
+  color: pink;
+}
+
+#myface {
+  text-align: center;
+}
+
+#myface>img {
+  width: 210px;
+  height: 210px;
+}
+
+.container img:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+} 
+
+.container img {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+}
+
+ul.thumbnails {
+  text-align: center;
+}
+
+#foot-links li {
+  display: inline-block;
+  text-align: center;
+}
 
 
 /*____MEDIA QUERY________________________________________________*/
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
+
   h1 {
-    font-size: 36px;
-    padding: 5px;
+    font-size: 2.5em;
   }
 
-/*  li {
-    padding: 5px;
+  .navbar-nav>li {
     display: block;
-  }*/
+  }
+
 }

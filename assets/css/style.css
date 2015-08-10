@@ -2,6 +2,14 @@
 
 
 
+/*____MEDIA QUERY________________________________________________*/
+
+/*@media (min-width: 768px) {
+
+}
+*/
+
+
 /*____MAIN STYLES________________________________________________*/
 
 body {
@@ -14,14 +22,14 @@ body {
 
 header {
   text-align: center;
-  background-color: #ccc;
+  background-color: #CDF;
   /*background: url('http://i.imgur.com/Hv8TPLF.jpg');*/
   /*background-size: cover;*/
   /*background: url('../images/xv.png');*/
   color: #fff;
   width: 100%;
   min-height: 12.5em;
-  padding-top: 0em;
+  padding-top: 2.5em;
 }
 
 a {
@@ -30,24 +38,23 @@ a {
 
 h1 {
   text-align: center;
-  margin: 0;
-  padding: 0;
+/*  margin: 0;
+  padding: 0;*/
 }
 
 h2 {
-  font-size: 50px;
-  text-align: center;
-  padding-top: 1em;
+  /*font-size: 50px;*/
+  /*text-align: center;*/
 }
 
-h3 {
+/*h3 {
   font-size: 30px;
   padding-top: 1em;
-}
+}*/
 
-h4 {
+/*h4 {
   text-align: center;
-}
+}*/
 
 p {
   margin: 0.5em 0;
@@ -56,8 +63,20 @@ p {
 
 /*____BOOTSTRAP HACKS________________________________________________*/
 
+.affix-top, .affix {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.affix-top {
+  margin-top: 76px;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+}
+
 .navbar {
-  background: rgba(0,0,0,0.5);
   margin-bottom: 0;
   min-height: 30px;
 }
@@ -81,16 +100,31 @@ p {
   margin: 4px 15px 4px 0;
 }
 
+.lead {
+
+}
+
+.row {
+  padding-top: 1em;
+}
+
 
 /*____CLASS & ID STYLES________________________________________________*/
 
-/*nav>ul {
-  padding: 10px;
-  background: rgba(0,0,0,0.5);
-  list-style: none;
+.clearfix {
+  clear: both;
 }
 
-#main {
+#myface {
+  text-align: center;
+}
+
+#myface>img {
+  width: 210px;
+  height: 210px;
+}
+
+/*#main {
   margin-top: 1em;
   padding: 0 7.5%;
 }
@@ -100,10 +134,6 @@ p {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-#main ul {
-
 }
 
 #main li {
@@ -116,24 +146,18 @@ div.skill-list {
 }
 
 .skill-list ul {
-}
-
-.clear {
-  clear: both;
-}
-*/
-
+}*/
 
 /*____MEDIA QUERY________________________________________________*/
 
-@media (max-width: 750px) {
-  h1 {
-    font-size: 36px;
-    padding: 5px;
+@media (max-width: 768px) {
+
+  h1 a {
+    color: blue;
   }
 
-/*  li {
-    padding: 5px;
+  .navbar-nav>li {
     display: block;
-  }*/
+  }
+
 }

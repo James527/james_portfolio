@@ -66,12 +66,12 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a class="hvr-underline-from-center" href="#experience">Experience</a></li>
-              <li><a class="hvr-underline-from-center" href="#skills">Skills</a></li>
-              <li><a class="hvr-underline-from-center" href="#portfolio">Design Portfolio</a></li>
-              <li><a class="hvr-underline-from-center" href="#education">Education</a></li>
-              <li><a class="hvr-underline-from-center" href="#about">About Me</a></li>
-              <li><a class="hvr-underline-from-center" href="./assets/James_Rutledge_Resume.pdf">Resume Hard Copy</a></li>
+              <li><a class="hvr-underline-from-center scroll" href="#experience">Experience</a></li>
+              <li><a class="hvr-underline-from-center scroll" href="#skills">Skills</a></li>
+              <li><a class="hvr-underline-from-center scroll" href="#portfolio">Design Portfolio</a></li>
+              <li><a class="hvr-underline-from-center scroll" href="#education">Education</a></li>
+              <li><a class="hvr-underline-from-center scroll" href="#about">About Me</a></li>
+              <li><a class="hvr-underline-from-center scroll" href="./assets/James_Rutledge_Resume.pdf">Resume Hard Copy</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!-- /.container -->
@@ -264,6 +264,26 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
     <script src="./bower_components/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var hashTagActive = "";
+      $(".scroll").click(function (event) {
+          if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+              event.preventDefault();
+              //calculate destination place
+              var dest = 0;
+              if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                  dest = $(document).height() - $(window).height();
+              } else {
+                  dest = $(this.hash).offset().top;
+              }
+              //go to destination
+              $('html,body').animate({
+                  scrollTop: dest
+              }, 2000, 'swing');
+              hashTagActive = this.hash;
+          }
+      });
+    </script>
 
 	<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -18,6 +18,8 @@ h1 {
 }
 
 h2 {
+  color: #0099CC;
+  color: rgba(0, 153, 204, 0.5);
   font-family: 'Josefin Slab', serif;
   font-size: 6em;
 }
@@ -39,8 +41,13 @@ p {
   padding: 0 1em;
 }
 
+ul {
+  list-style: circle;
+}
+
 section {
   padding: 3em 0;
+  min-height: 35em;
   width: 100%;
 }
 
@@ -56,7 +63,7 @@ header {
   background-size: cover;
   color: #fff;
   text-align: center;
-  min-height: 18em;
+  min-height: 16em;
   padding-top: 4.5em;
   width: 100%;
 }
@@ -111,13 +118,19 @@ footer {
   padding: 5px 15px;
 }
 
+.nav>li>a:hover {
+  background-color: #00CCFF;
+}
+
 .navbar-toggle {
   padding: 0 10px;
   margin: 4px 15px 4px 0;
 }
 
 .lead {
-
+  font-size: 1.3em;
+  padding-top: 0;
+  padding-bottom: 1em;
 }
 
 .row {
@@ -136,6 +149,10 @@ h1 a:hover {
   color: pink;
 }
 
+p.dent {
+  text-indent: 2em;
+}
+
 #myface {
   text-align: center;
 }
@@ -143,6 +160,20 @@ h1 a:hover {
 #myface>img {
   width: 210px;
   height: 210px;
+}
+
+#brand {
+  background-color: #fff;
+  /*margin: 1.3em 0 0 0;*/
+  margin-top: 1.3em;
+}
+
+#hello {
+  text-align: center;
+  font-size: 4em;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
 }
 
 .container img:hover {
@@ -165,6 +196,13 @@ h1 a:hover {
 
 ul.thumbnails {
   text-align: center;
+  padding-top: 4em;
+  padding-left: 0;
+  list-style: none;
+}
+
+#skills ul {
+  margin-left: 3em;
 }
 
 #foot-links li {
@@ -277,6 +315,15 @@ ul.thumbnails {
 
 @media (max-width: 991px) {
 
+  #skills ul {
+    margin-left: 8em;
+  }
+
+  #brand {
+    margin: 1.5em 3em 0 3em;
+/*    font-size: 0.8em;*/
+  }
+
   /* Bubble Float Top */
   .hvr-bubble-float {
     display: inline-block;
@@ -323,6 +370,10 @@ ul.thumbnails {
 
   h1 {
     font-size: 2.5em;
+  }
+
+  #skills ul {
+    margin-left: 6em;
   }
 
   .navbar-nav>li {

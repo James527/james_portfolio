@@ -119,6 +119,7 @@ footer {
 
 .navbar-nav>li {
   float: inherit;
+  font-family: 'Josefin Slab', serif;
   display: inline-block;
 }
 
@@ -207,17 +208,21 @@ p.dent {
 
 #hello {
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-style: italic;
   margin: 0;
   padding: 0;
 }
 
-ul.thumbnails {
+.thumbnails {
   text-align: center;
-  padding-top: 4em;
+  padding-top: 2em;
   padding-left: 0;
   list-style: none;
+}
+
+.thumbnails li {
+  padding-top: 2em;
 }
 
 #skills ul {
@@ -241,7 +246,7 @@ ul.thumbnails {
   color: #00CCFF;
 }
 
-img.colorhover:hover {
+.colorhover:hover {
   -webkit-filter: grayscale(0%);
   -webkit-transition: .5s ease-in-out;
   -moz-filter: grayscale(0%);
@@ -250,7 +255,7 @@ img.colorhover:hover {
   -o-transition: .5s ease-in-out;
 } 
 
-img.colorhover {
+.colorhover {
   -webkit-filter: grayscale(100%);
   -webkit-transition: .5s ease-in-out;
   -moz-filter: grayscale(100%); 

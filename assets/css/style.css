@@ -8,6 +8,10 @@ a {
   color: #000;
 }
 
+a:hover {
+  color: #00CCFF;
+}
+
 h1, h2, h3, h4, h5 {
   text-align: center;
 }
@@ -102,6 +106,7 @@ footer {
   width: 100%;
 }
 
+/* NavBar Hacks */
 .navbar {
   margin-bottom: 0;
   min-height: 30px;
@@ -124,6 +129,30 @@ footer {
 
 .nav>li>a:hover {
   background-color: #00CCFF;
+}
+
+li#nav-exp>a:hover {
+  background-color: #19D119;
+}
+
+
+li#nav-ski>a:hover {
+  background-color: #00CCFF;
+}
+
+
+li#nav-port>a:hover {
+  background-color: #942192;
+}
+
+
+li#nav-edu>a:hover {
+  background-color: #FF0000;
+}
+
+
+li#nav-abo>a:hover {
+  background-color: #FFFF19;
 }
 
 .navbar-toggle {
@@ -150,11 +179,15 @@ footer {
 
 h1 a:hover {
   text-decoration: none;
-  color: pink;
+  color: #2098d1;
 }
 
 p.dent {
   text-indent: 2em;
+}
+
+#reslink {
+  float: right;
 }
 
 #myface {
@@ -169,7 +202,6 @@ p.dent {
 
 #brand {
   background-color: #fff;
-  /*margin: 1.3em 0 0 0;*/
   margin-top: 1.3em;
 }
 
@@ -179,24 +211,6 @@ p.dent {
   font-style: italic;
   margin: 0;
   padding: 0;
-}
-
-.container img:hover {
-  -webkit-filter: grayscale(0%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(0%);
-  -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(0%);
-  -o-transition: .5s ease-in-out;
-} 
-
-.container img {
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(100%); 
-  -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(100%); 
-  -o-transition: .5s ease-in-out;
 }
 
 ul.thumbnails {
@@ -210,9 +224,39 @@ ul.thumbnails {
   margin-left: 3em;
 }
 
+#education>div>div {
+  padding-top: 4em;
+}
+
+#education img {
+  width: 150px;
+}
+
 #foot-links li {
   display: inline-block;
   text-align: center;
+}
+
+#foot-links>li>a>i:hover {
+  color: #00CCFF;
+}
+
+img.colorhover:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+} 
+
+img.colorhover {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
 }
 
 

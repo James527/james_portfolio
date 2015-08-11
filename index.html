@@ -21,6 +21,8 @@
 	<!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300' rel='stylesheet' type='text/css'>
 
   	<!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,6 +31,11 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./bower_components/lightbox2/dist/css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style type="text/css">
+
+/*    temp css goes here*/
+
+    </style>
 
 	<!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,9 +47,12 @@
 
   </head>
   <body>
-    <header>
-      <h1><a href="#">James Aaron Rutledge</a></h1>
-      <nav data-spy="affix" data-offset-top="149">
+    <header id="home">
+      <div id="reslink">
+        <a href="./assets/James_Rutledge_Resume.pdf"><span>Printable </span>Resume</a>
+      </div>
+      <h1>James Aaron Rutledge</h1>
+      <nav data-spy="affix" data-offset-top="198">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -52,12 +62,27 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#portfolio">Design Portfolio</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="./assets/James_Rutledge_Resume.pdf">Resume Hard Copy</a></li>
+              <li id="nav-home">
+                <a href="#home" class="hvr-underline-from-center scroll"><i class="fa fa-home fa-lg" title="Home"></i></a>
+              </li>
+              <li id="nav-exp">
+                <a href="#experience" class="hvr-underline-from-center scroll">Experience</a>
+              </li>
+              <li id="nav-ski">
+                <a href="#skills" class="hvr-underline-from-center scroll">Skills</a>
+              </li>
+              <li id="nav-port">
+                <a href="#portfolio" class="hvr-underline-from-center scroll">Portfolio</a>
+              </li>
+              <li id="nav-edu">
+                <a href="#education" class="hvr-underline-from-center scroll">Education</a>
+              </li>
+              <li id="nav-abo">
+                <a href="#about" class="hvr-underline-from-center scroll">About Me</a>
+              </li>
+              <li id="nav-res">
+                <a href="./assets/James_Rutledge_Resume.pdf" class="hvr-underline-from-center">Resume</a>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!-- /.container -->
@@ -66,30 +91,39 @@
     <main>
       <div class="container">
         <section id="mybrand">
-          <div class="row">
-            <div id="myface" class="col-md-3 col-md-offset-1">
-              <img src="assets/images/profile1.png">
+          <div class="row colorhover">
+            <div id="myface" class="col-md-4 col-md-offset-2">
+              <img src="assets/images/profile1.png" alt="Picture of James">
             </div>
-            <div class="col-md-7">
-              <p class="lead">Hello! My name is James. I am a TDD friendly, full-stack web developer with over five years of experience. I resolve issues by arranging 1’s and 0’s in a meaningful sequence. I am untapped raw potential with a reservoir of patience, and I believe the world deserves beautiful data structures.</p>              
+            <div id="brand" class="col-md-5 hvr-bubble-float">
+              <p id="hello">Hi there!</p>
+              <p class="lead">My name's James. I am a TDD friendly, full-stack web developer with over five years of experience. I am an untapped source of homegrown, raw potential with a reservoir of patience to boot, and I believe the world deserves beautiful data structures.</p>
             </div>
           </div>
         </section><!-- /#mybrand -->
         <section id="experience">
           <h2>experience</h2>
           <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <h3>General Assembly</h3>
-              <h5>April 2015 - July 2015</h5>
-              <p>13 week full-time intensive program on full-stack web development. My final project, TurnPlot, built with Ruby on Rails and PostgreSQL, is a social platform with a virtual grid. My midterm project, PiqMapper, built with NodeJS and a MongoDB, allowed users to track their emotional well-being using colors. Collaborated with my classmates to build a restaurant application called App-etite.</p>
+            <div class="col-md-8 col-md-offset-2">
+              <div class="col-md-12">
+                <h3>General Assembly</h3>
+                <h5>April 2015 - July 2015</h5>
+                <p class="dent">13 week full-time intensive program on full-stack web development. My final project, TurnPlot, built with Ruby on Rails and PostgreSQL, is a social platform with a virtual grid. My midterm project, PiqMapper, built with NodeJS and a MongoDB, allowed users to track their emotional well-being using colors. Collaborated with my classmates to build a restaurant application called App-etite.</p>
+              </div>
+              <div class="col-md-12">
               <h3>MindWink</h3>
-              <h5>October 2010 - January 2013</h5>
-              <p>Designed and built custom WordPress and Drupal websites. Regularly produced written and multimedia material to engage consumers on clients Facebook, Twitter, and YouTube accounts. Shot, edited, and produced monthly video promos. Worked closely with clients to design and develop company brands. Lead pitch-meetings, developed presentations, established project management system and managed projects. Developed and maintained menu of services. Managed finances and tax records.</p>
-              <h3>Freelance Web Development</h3>
-              <h5>January 2008 - September 2010</h5>
-              <p>Designed, built and maintained custom WordPress installations. Video, photography and photo/video editing.</p>
-              <h3>EcoRise Youth Innovations</h3>
-              <p>Redisigned, built and maintained website. Regularly posted to blog and event pages. Volunteered in the annual art auction.</p>
+                <h5>October 2010 - January 2013</h5>
+                <p class="dent">Designed and built custom WordPress and Drupal websites. Regularly produced written and multimedia material to engage consumers on clients Facebook, Twitter, and YouTube accounts. Shot, edited, and produced monthly video promos. Worked closely with clients to design and develop company brands. Lead pitch-meetings, developed presentations, established project management system and managed projects. Developed and maintained menu of services. Managed finances and tax records.</p>
+              </div>
+              <div class="col-md-12">
+                <h3>Freelance</h3>
+                  <h5>January 2008 - September 2010</h5>
+                  <p class="dent">Designed, built and maintained custom WordPress installations. Video, photography and photo/video editing.</p>
+              </div>
+              <div class="col-md-12">
+                <h3>EcoRise Youth Innovations</h3>
+                <p class="dent">Redisigned, built and maintained website. Regularly posted to blog and event pages. Volunteered in the annual art auction.</p>
+              </div>
             </div>
           </div>
         </section><!-- /#experience -->
@@ -97,7 +131,7 @@
           <h2>skills</h2>
           <div class="row">
             <div class="col-md-2 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
-              <h4>Languages</h4>      
+              <h4>Languages</h4>
               <ul>
                 <li>Ruby</li>
                 <li>Javascript</li>
@@ -110,7 +144,7 @@
               </ul>
             </div>
             <div class="col-md-2 col-sm-5 col-xs-5">
-              <h4>Frameworks</h4>   
+              <h4>Frameworks</h4>
               <ul>
                 <li>Ruby on Rails</li>
                 <li>Node</li>
@@ -124,7 +158,7 @@
               </ul>
             </div>
             <div class="col-md-2 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
-              <h4>Methodologies</h4>      
+              <h4>Methodologies</h4>
               <ul>
                 <li>Agile</li>
                 <li>Object-Oriented Programming</li>
@@ -133,10 +167,9 @@
               </ul>
             </div>
             <div class="col-md-2 col-sm-5 col-xs-5">
-              <h4>Other Tools</h4>        
+              <h4>Other Tools</h4>
               <ul>
-                <li>Git</li>
-                <li>GitHub</li>
+                <li>Git/GitHub</li>
                 <li>Heroku</li>
                 <li>Grunt</li>
                 <li>Bower</li>
@@ -153,69 +186,58 @@
         <section id="portfolio">
           <h2>portfolio</h2>
             <ul class="row thumbnails">
-              <li class="col-md-3">
+              <li class="col-md-3 col-sm-4 col-xs-4">
                 <a href="./assets/images/mw.png" data-lightbox="portfolio">
-                  <img class="img-circle" src="./assets/images/mind_thumb.png" alt="portfolio thumbnail">
+                  <img class="colorhover img-circle" src="./assets/images/mw-thumb.png" alt="portfolio thumbnail">
                 </a>
               </li>
-              <li class="col-md-3">
+              <li class="col-md-3 col-sm-4 col-xs-4">
+                <a href="./assets/images/turn.png" data-lightbox="portfolio">
+                  <img class="colorhover img-circle" src="./assets/images/turn-thumb.png" alt="portfolio thumbnail">
+                </a>
+              </li>
+              <li class="col-md-3 col-sm-4 col-xs-4">
                 <a href="./assets/images/piq.png" data-lightbox="portfolio">
-                  <img class="img-circle" src="./assets/images/piq_thumb.png" alt="portfolio thumbnail">
+                  <img class="colorhover img-circle" src="./assets/images/piq-thumb.png" alt="portfolio thumbnail">
                 </a>
               </li>
-              <li class="col-md-3">
-                <a href="./assets/images/mw.png" data-lightbox="portfolio">
-                  <img class="img-circle" src="./assets/images/mind_thumb.png" alt="portfolio thumbnail">
-                </a>
-              </li>
-              <li class="col-md-3">
+              <li class="col-md-3 col-sm-4 col-xs-4">
                 <a href="./assets/images/hub.png" data-lightbox="portfolio">
-                  <img class="img-circle" src="./assets/images/hub_thumb.png" alt="portfolio thumbnail">
-                </a>
-              </li><!-- /row1 -->
-            </ul>
-            <ul class="row thumbnails">
-              <li class="col-md-3">
-                <a href="./assets/images/mw.png" data-lightbox="portfolio">
-                  <img class="img-circle" src="./assets/images/mind_thumb.png" alt="portfolio thumbnail">
+                  <img class="colorhover img-circle" src="./assets/images/hub-thumb.png" alt="portfolio thumbnail">
                 </a>
               </li>
-              <li class="col-md-3">
-                <a href="./assets/images/piq.png" data-lightbox="portfolio">
-                  <img class="img-circle" src="./assets/images/piq_thumb.png" alt="portfolio thumbnail">
-                </a>
-              </li>
-              <li class="col-md-3">
-                <a href="./assets/images/mw.png" data-lightbox="portfolio">
-                  <img class="img-circle" src="./assets/images/mind_thumb.png" alt="portfolio thumbnail">
-                </a>
-              </li>
-              <li class="col-md-3">
-                <a href="./assets/images/hub.png" data-lightbox="portfolio">
-                  <img class="img-circle" src="./assets/images/hub_thumb.png" alt="portfolio thumbnail">
-                </a>
-              </li><!-- /row2 -->
             </ul>
         </section><!-- /#portfolio -->
         <section id="education">
           <div class="row">
             <h2>education</h2>
-            <div class="col-md-5 col-md-offset-1">
-              <h3>General Assembly</h3>
-              <h5>Graduated July 2015 | Austin, TX</h5>
+            <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+              <div class="col-md-6 col-md-offset-3 col-sm-3 col-sm-offset-2 col-xs-3 col-xs-offset-2">
+                <img src="assets/images/ga-logo.png">
+              </div>
+              <div class="col-md-12 col-sm-6 col-xs-6">
+                <h3>General Assembly</h3>
+                <h5>Graduated July 2015 | Austin, TX</h5>
+              </div>
             </div>
-            <div class="col-md-5">        
-              <h3>The University of Texas</h3>
-              <h5>Graduated August 2014 | Austin, TX</h5>
+            <div class="col-md-5 col-sm-12 col-xs-12">
+              <div class="col-md-6 col-md-offset-3 col-sm-3 col-sm-offset-2 col-xs-3 col-xs-offset-2">
+                <img src="assets/images/ut-logo.png">
+              </div>
+              <div class="col-md-12 col-sm-6 col-xs-6">
+                <h3>The University of Texas</h3>
+                <h5>Graduated August 2014 | Austin, TX</h5>
+              </div>
             </div>
           </div><!-- /#education -->
         </section>
         <section id="about">
           <h2>about me</h2>
           <div class="row">
-            <ul class="col-md-4 col-md-offset-4">
-              <li>I have a working proficiency with Chinese and Spanish.</li>
-              <li>Last year I took a solo trip abroad, backpacking across Japan and South Korea</li>
+            <ul class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
+              <li>I was born and raised in Austin, TX</li>
+              <li>Last September I took a solo trip abroad, backpacking across Japan and South Korea</li>
+              <li>I have a working proficiency with Chinese and Spanish</li>
               <li>My favorite film is <a href="http://en.wikipedia.org/wiki/Cl%C3%A9o_from_5_to_7">Cléo from 5 to 7</a></li>
               <li>My favorite philosopher is <a href="http://http://en.wikipedia.org/wiki/Albert_Camus">Albert Camus</a></li>
               <li>My favorite author is <a href="http://en.wikipedia.org/wiki/Don_DeLillo">Don DeLillo</a>, <a href="http://en.wikipedia.org/wiki/Haruki_Murakami">Haruki Murakami</a> is a close second</li>
@@ -230,19 +252,19 @@
       <div class="container">
         <ul id="foot-links" class="row">
           <li class="col-md-2 col-md-offset-1 col-sm-1 col-sm-offset-2 col-xs-1 col-xs-offset-2">
-            <i class="fa fa-phone fa-2x"></i>phone
+            <a class="hvr-float" href=""><i class="fa fa-phone fa-2x" title="Phone"></i></a>
           </li>
           <li class="col-md-2 col-md-offset-0 col-sm-1 col-sm-offset-1 col-xs-1 col-xs-offset-1">
-            <i class="fa fa-envelope fa-2x"></i><a href="mailto:jarutledge2@gmail.com">email</a>
+            <a class="hvr-float" href="mailto:jarutledge2@gmail.com"><i class="fa fa-envelope fa-2x" title="Gmail"></i></a>
           </li>
           <li class="col-md-2 col-md-offset-0 col-sm-1 col-sm-offset-1 col-xs-1 col-xs-offset-1">
-            <i class="fa fa-github fa-2x"></i><a href="http://github.com/jmz527">github</a>
+            <a class="hvr-float" href="http://github.com/jmz527"><i class="fa fa-github fa-2x" title="GitHub"></i></a>
           </li>
           <li class="col-md-2 col-md-offset-0 col-sm-1 col-sm-offset-1 col-xs-1 col-xs-offset-1">
-            <i class="fa fa-twitter fa-2x"></i><a href="http://twitter.com/jmz527">twitter</a>
+            <a class="hvr-float" href="http://twitter.com/jmz527"><i class="fa fa-twitter fa-2x" title="Twitter"></i></a>
           </li>
           <li class="col-md-2 col-md-offset-0 col-sm-1 col-sm-offset-1 col-xs-1 col-xs-offset-1">
-            <i class="fa fa-linkedin-square fa-2x"></i><a href="http://linkedin.com/in/jmz527">linkedin</a>
+            <a class="hvr-float" href="http://linkedin.com/in/jmz527"><i class="fa fa-linkedin-square fa-2x" title="LinkedIn"></i></a>
           </li>
         </ul>
       </div><!-- /.container -->
@@ -252,6 +274,26 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
     <script src="./bower_components/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var hashTagActive = "";
+      $(".scroll").click(function (event) {
+          if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+              event.preventDefault();
+              //calculate destination place
+              var dest = 0;
+              if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                  dest = $(document).height() - $(window).height();
+              } else {
+                  dest = $(this.hash).offset().top;
+              }
+              //go to destination
+              $('html,body').animate({
+                  scrollTop: dest
+              }, 2000, 'swing');
+              hashTagActive = this.hash;
+          }
+      });
+    </script>
 
 	<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

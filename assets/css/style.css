@@ -78,7 +78,7 @@ main {
   background: url(../images/texturetastic_gray.png);
   background-repeat: repeat;
   width: 100%;
-  padding: 5em 0;
+  padding: 5em 0 0;
 }
 
 footer {
@@ -117,9 +117,10 @@ footer {
 }
 
 .navbar-nav>li {
+  display: inline-block;
   float: inherit;
   font-family: 'Josefin Slab', serif;
-  display: inline-block;
+  margin: 0 0.5em;
 }
 
 .navbar-nav>li>a {
@@ -180,10 +181,6 @@ p.dent {
   text-indent: 2em;
 }
 
-#reslink {
-  float: right;
-}
-
 #myface {
   text-align: center;
   margin-top: 1.5em;
@@ -228,6 +225,30 @@ p.dent {
 
 #education img {
   width: 150px;
+}
+
+#reslink {
+  background-color: #5E5E5E;
+  display: block;
+  font-size: 1.2em;
+  text-align: center;
+  position: fixed;
+  margin: 0;
+  right: 10%;
+  bottom: 0;
+  width: 12.5%;
+  height: 4em;
+  z-index: 100;
+}
+
+#reslink.affix {
+  background-color: teal;
+}
+
+#reslink>a {
+  display: inherit;
+  margin: 0 0.5em;
+  padding: 0.7em 0;
 }
 
 #foot-links li {
@@ -410,7 +431,7 @@ p.dent {
 
 @media (max-width: 768px) {
   main {
-    padding-top: 7em;
+    padding-top: 9em;
   }
 
   h1 {

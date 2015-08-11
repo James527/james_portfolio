@@ -1,7 +1,3 @@
-/*____ADDED FONTS________________________________________________*/
-
-
-
 /*____MAIN STYLES________________________________________________*/
 
 a {
@@ -19,6 +15,8 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-family: 'Josefin Slab', serif;
   font-size: 4em;
+  height: 61px;
+  margin: 0;
 }
 
 h2 {
@@ -66,13 +64,13 @@ body {
 }
 
 header {
-/*  background-color: #CDF;*/
+  background-color: #CCD;
   background: url('../images/headbg.png');
   background-size: cover;
   color: #fff;
   text-align: center;
-  min-height: 16em;
-  padding-top: 4.5em;
+  height: 225px;
+  padding-top: 59px;
   width: 100%;
 }
 
@@ -95,6 +93,7 @@ footer {
 
 .affix-top, .affix {
   background-color: rgba(0,0,0,0.5);
+  z-index: 100;
 }
 
 .affix-top {
@@ -106,15 +105,15 @@ footer {
   width: 100%;
 }
 
-/* NavBar Hacks */
-.navbar {
-  margin-bottom: 0;
-  min-height: 30px;
+.navbar-toggle {
+  padding: 0 10px;
+  margin: 4px 15px 2px 0;
 }
 
 .navbar-nav {
   float: none;
   text-align: center;
+  margin: 0 -15px;
 }
 
 .navbar-nav>li {
@@ -126,6 +125,8 @@ footer {
 .navbar-nav>li>a {
   color: #fff;
   padding: 5px 15px;
+  line-height: 18px;
+  letter-spacing: 3px;
 }
 
 .nav>li>a:hover {
@@ -136,33 +137,25 @@ li#nav-exp>a:hover {
   background-color: #19D119;
 }
 
-
 li#nav-ski>a:hover {
   background-color: #00CCFF;
 }
-
 
 li#nav-port>a:hover {
   background-color: #942192;
 }
 
-
 li#nav-edu>a:hover {
   background-color: #FF0000;
 }
 
-
 li#nav-abo>a:hover {
-  background-color: #FFFF19;
-}
-
-.navbar-toggle {
-  padding: 0 10px;
-  margin: 4px 15px 4px 0;
+  background-color: #FF9900;
 }
 
 .lead {
   font-size: 1.3em;
+  text-indent: 1.5em;
   padding-top: 0;
   padding-bottom: 1em;
 }
@@ -301,7 +294,6 @@ p.dent {
   right: 0;
 }
 
-
 /* Bubble Float Left */
 .hvr-bubble-float {
   display: inline-block;
@@ -341,7 +333,6 @@ p.dent {
   transform: translateX(-10px);
 }
 
-
 /* Float */
 .hvr-float {
   display: inline-block;
@@ -368,7 +359,6 @@ p.dent {
 /*____MEDIA QUERY________________________________________________*/
 
 @media (max-width: 991px) {
-
   #skills ul {
     margin-left: 8em;
   }
@@ -416,14 +406,16 @@ p.dent {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-
 }
 
-
 @media (max-width: 768px) {
+  main {
+    padding-top: 7em;
+  }
 
   h1 {
     font-size: 2.5em;
+    padding-top: 20px;
   }
 
   #skills ul {
@@ -431,7 +423,7 @@ p.dent {
   }
 
   .navbar-nav>li {
+    background-color: rgba(0,0,0,0.5);
     display: block;
   }
-
 }

@@ -41,6 +41,7 @@ h5 {
 p {
   margin: 0.5em 0;
   padding: 0 1em;
+  font-size: 1.3em;
 }
 
 i {
@@ -91,6 +92,17 @@ footer {
 
 /*____BOOTSTRAP HACKS________________________________________________*/
 
+.lead {
+  font-size: 1.3em;
+  text-indent: 1.5em;
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+
+.row {
+  padding-top: 1em;
+}
+
 .affix-top, .affix {
   background-color: rgba(0,0,0,0.5);
   z-index: 100;
@@ -134,6 +146,10 @@ footer {
   background-color: #00CCFF;
 }
 
+li#nav-home>a:hover {
+  background-color: #0000CC;
+}
+
 li#nav-exp>a:hover {
   background-color: #19D119;
 }
@@ -154,15 +170,8 @@ li#nav-abo>a:hover {
   background-color: #FF9900;
 }
 
-.lead {
-  font-size: 1.3em;
-  text-indent: 1.5em;
-  padding-top: 0;
-  padding-bottom: 1em;
-}
-
-.row {
-  padding-top: 1em;
+li#nav-res {
+  display: none;
 }
 
 
@@ -172,13 +181,34 @@ li#nav-abo>a:hover {
   clear: both;
 }
 
-h1 a:hover {
-  text-decoration: none;
+h1:hover {
   color: #2098d1;
 }
 
 p.dent {
   text-indent: 2em;
+}
+
+#reslink {
+  background-color: #33CCCC;
+  display: block;
+  font-size: 1.1em;
+  text-align: center;
+  position: fixed;
+  margin: 0;
+  right: 8.33333333%;
+  top: 0;
+  /*width: 8.33333333%;*/
+  /*width: 16.66666666%;*/
+  width: 12.499999995%;
+  height: 3em;
+  z-index: 101;
+}
+
+#reslink>a {
+  display: inherit;
+  margin: 0 0.5em;
+  padding: 0.7em 0;
 }
 
 #myface {
@@ -217,6 +247,7 @@ p.dent {
 
 #skills ul {
   margin-left: 3em;
+  font-size: 1.3em;
 }
 
 #education>div>div {
@@ -227,28 +258,8 @@ p.dent {
   width: 150px;
 }
 
-#reslink {
-  background-color: #5E5E5E;
-  display: block;
-  font-size: 1.2em;
-  text-align: center;
-  position: fixed;
-  margin: 0;
-  right: 10%;
-  bottom: 0;
-  width: 12.5%;
-  height: 4em;
-  z-index: 100;
-}
-
-#reslink.affix {
-  background-color: teal;
-}
-
-#reslink>a {
-  display: inherit;
-  margin: 0 0.5em;
-  padding: 0.7em 0;
+#about ul {
+  font-size: 1.3em;
 }
 
 #foot-links li {
@@ -379,7 +390,30 @@ p.dent {
 
 /*____MEDIA QUERY________________________________________________*/
 
+@media (max-width: 1148px) {
+  #reslink span {
+    display: none;
+  }
+
+  .navbar-nav>li>a {
+    padding: 5px 10px;
+    letter-spacing: 1px;
+  }
+}
+
 @media (max-width: 991px) {
+  #reslink {
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  .navbar-nav>li {
+    margin: 0;
+  }
+
   #skills ul {
     margin-left: 8em;
   }
@@ -430,17 +464,38 @@ p.dent {
 }
 
 @media (max-width: 768px) {
-  main {
-    padding-top: 9em;
+  #reslink {
+    display: none;
+  }
+
+  li#nav-res {
+    display: block;
+  }
+
+  li#nav-res>a:hover {
+    background-color: #CCCC00;
+  }
+
+  #mybrand {
+    padding-top: 9em;  
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     padding-top: 20px;
+  }
+
+  p {
+    font-size: 1em;
   }
 
   #skills ul {
     margin-left: 6em;
+    font-size: 1em;
+  }
+
+  #about ul {
+    font-size: 1em;
   }
 
   .navbar-nav>li {

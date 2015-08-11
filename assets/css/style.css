@@ -41,6 +41,10 @@ p {
   padding: 0 1em;
 }
 
+i {
+  color: #fff;
+}
+
 ul {
   list-style: circle;
 }
@@ -76,9 +80,9 @@ main {
 }
 
 footer {
-  background: url('../images/xv.png');
-  min-height: 12.5em;
-  padding-top: 2.5em;
+  background: url('../images/6ghgesn.jpg');
+  min-height: 25em;
+  padding-top: 5em;
   width: 100%;
 }
 
@@ -155,6 +159,7 @@ p.dent {
 
 #myface {
   text-align: center;
+  margin-top: 1.5em;
 }
 
 #myface>img {

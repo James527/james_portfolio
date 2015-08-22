@@ -5,7 +5,8 @@ a {
 }
 
 a:hover {
-  color: #00CCFF;
+  /*color: #169D99;*/
+  color: #337ab7;
 }
 
 h1, h2, h3, h4, h5 {
@@ -93,6 +94,7 @@ footer {
 /*____BOOTSTRAP HACKS________________________________________________*/
 
 .lead {
+  /*color: #2098d1;*/
   font-size: 1.3em;
   text-indent: 1.5em;
   padding-top: 0;
@@ -144,6 +146,7 @@ footer {
 
 .nav>li>a:hover {
   background-color: #00CCFF;
+  color: #000;
 }
 
 li#nav-home>a:hover {
@@ -182,7 +185,8 @@ li#nav-res {
 }
 
 h1:hover {
-  color: #2098d1;
+  /*color: #2098d1;*/
+  color: #DC0E72;
 }
 
 p.dent {
@@ -227,6 +231,7 @@ p.dent {
 }
 
 #hello {
+  color: #2098d1;
   text-align: center;
   font-size: 3em;
   font-style: italic;
@@ -254,12 +259,22 @@ p.dent {
   padding-top: 4em;
 }
 
+#education a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
 #education img {
   width: 150px;
 }
 
 #about ul {
   font-size: 1.3em;
+}
+
+#about a:hover {
+  text-decoration: none;
+  color: #2098d1;
 }
 
 #foot-links li {

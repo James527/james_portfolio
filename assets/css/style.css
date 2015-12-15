@@ -185,7 +185,6 @@ li#nav-res {
 }
 
 h1:hover {
-  /*color: #2098d1;*/
   color: #DC0E72;
 }
 
@@ -202,8 +201,6 @@ p.dent {
   margin: 0;
   right: 8.33333333%;
   top: 0;
-  /*width: 8.33333333%;*/
-  /*width: 16.66666666%;*/
   width: 12.499999995%;
   height: 3em;
   z-index: 101;
@@ -435,7 +432,6 @@ p.dent {
 
   #brand {
     margin: 1.5em 3em 0 3em;
-/*    font-size: 0.8em;*/
   }
 
   /* Bubble Float Top */
